@@ -3,9 +3,11 @@ const bodyParser = require('body-parser');
 // const Path = require('path');
 
 const server = express();
+const cors = require('cors');
 
 // Plugins
 server.use(bodyParser.json())
+server.use(cors())
 
 // Routes
 server.use([

@@ -8,7 +8,9 @@ const router = express.Router();
 router.get('/records', (req, res) => {
   Record.find()
     .then((records) => {
-      res.json(records)
+      res.json(records.sort(function(a, b) {
+        return new Date(b.date) - new Date(a.date)
+      }))
     })
 })
 
