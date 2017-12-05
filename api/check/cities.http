@@ -2,8 +2,12 @@ GET http://localhost:7000/records
 
 ###
 
-GET http://localhost:7000/cities/5a24d35d43961e5dc02ad8fc
+GET http://localhost:7000/records/5a24d35d43961e5dc02ad8fc
 
 ###
 
-DELETE  http://localhost:7000/cities/5a24d35d43961e5dc02ad8fc
+DELETE  http://localhost:7000/records/5a24d35d43961e5dc02ad8fc
+
+###
+
+GET http://localhost:7000/records/melbourne
